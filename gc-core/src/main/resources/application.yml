@@ -1,3 +1,4 @@
+
 spring :
   datasource :
     url : jdbc:mysql://127.0.0.1:3306/garbage_classification?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
@@ -7,10 +8,5 @@ spring :
   jackson:
     data-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
-# JWT
-jwt:
-  header: Authorization
-  secret: mySecret
-  #token有效期一天
-  expiration: 86400
-  tokenHead: "Bearer "
+server:
+  port: 10021
